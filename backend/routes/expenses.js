@@ -1,4 +1,5 @@
 import { Router } from "express";
+import mongoose from "mongoose";
 import Expense from "../models/Expense.js";
 import requireAuth from "../middleware/auth.js";
 
@@ -22,7 +23,7 @@ router.get("/", async (req, res) => {
 
 // Summary for dashboard charts: totals by category + monthly totals
 router.get("/summary", async (req, res) => {
-  const userId = req.userId;
+  const userId = new mongoose.Types.ObjectId(req.userId);
 
   const byCategory = await Expense.aggregate([
     { $match: { user: userId } },
