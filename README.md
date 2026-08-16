@@ -2,7 +2,7 @@
 
 A full-stack expense tracker for freelancers, styled after a paper accounting ledger book — dot-leader entry rows, tabular monospace figures, category and monthly breakdowns.
 
-<a href="https://ledger-expense-tracker-psi.vercel.app/">
+https://ledger-expense-tracker-psi.vercel.app/
 
 <img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/dd4bb303-26e2-4862-b788-5c051754f069" />
 
