@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FAF9F5;
+  --color-paper-dim: #F1EFE6;
+  --color-ink: #23261F;
+  --color-ink-soft: #5B5F52;
+  --color-forest: #1F4B3F;
+  --color-forest-dark: #163831;
+  --color-gold: #C9A227;
+  --color-gold-soft: #E4D8A8;
+  --color-rule: #D8D4C4;
+  --color-red: #A8412D;
+
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Signature element: ledger row with dot-leader line between description and amount */
+.ledger-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.ledger-row .leader {
+  flex: 1;
+  border-bottom: 1px dotted var(--color-rule);
+  height: 0;
+  margin-bottom: 0.35rem;
+}
+
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.paper-card {
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-rule);
+}
